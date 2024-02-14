@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images\icons\view-3d-letter-k-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Karamveer Singh Oberoi</title>
+</head>
+
+<body>
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+    <navbar>
+    <div class="topnav" id="myTopnav">
+        <a>
+            <img src="images\icons\Screenshot_77-removebg-preview.png" alt="">
+        </a>
+        <b href="#home" class="active">Home</b>
+        <b href="#news">News</b>
+        <b href="#contact">Contact</b>
+        <b href="#about">About</b>
+        <b href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </b>
+    </div>
+</navbar>
+<div class="afternav">
+        
+        <div class="myDIV"><img src="images\ai r.png" alt=""></div>
+    <div class="hide"><h2>My Self Karamveer Singh Oberoi</h2></div>
+</div>
+    
+</body>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+    // Hide the loading screen
+    document.querySelector(".loading-screen").style.display = "none";
+
+    // Show the main content
+    document.querySelector(".main-content").style.display = "block";
+});
+
+</script>
+</html>
